@@ -11,7 +11,7 @@ source:
   sha256: 62abe28a1155398325372291483608427bc82681fef80e7d132904415f9fd42e
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - mecab-py = MeCab.cli:parse
     - mecab-py-info = MeCab.cli:info
