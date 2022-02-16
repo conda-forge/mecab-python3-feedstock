@@ -1,5 +1,5 @@
 {% set name = "mecab-python3" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.5" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mecab-python3-{{ version }}.tar.gz
-  sha256: 62abe28a1155398325372291483608427bc82681fef80e7d132904415f9fd42e
+  sha256: e703d78c88a671abb8170351644850015d9bbfab31530a3b40d12481a6779a11
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - mecab-py = MeCab.cli:parse
     - mecab-py-info = MeCab.cli:info
