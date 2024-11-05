@@ -1,5 +1,5 @@
 {% set name = "mecab-python3" %}
-{% set version = "1.0.8" %}
+{% set version = "1.0.10" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mecab-python3-{{ version }}.tar.gz
-  sha256: 70988bab263696456f75d3d8910c75aea477a9d08054ad7ef85be5470dd3f65b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 21cd4416043e9a993fcfb986dde93e4366a07543dd95849b5ef2e50c9a9afcce
 
 build:
   number: 0
@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - pip
