@@ -27,6 +27,7 @@ requirements:
     - pip
     - python
     - setuptools_scm
+    - setuptools
     - mecab
   run:
     - python
